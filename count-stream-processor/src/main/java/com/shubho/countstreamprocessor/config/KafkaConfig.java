@@ -11,7 +11,6 @@ import org.springframework.kafka.config.KafkaStreamsConfiguration;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
 import static org.apache.kafka.streams.StreamsConfig.*;
 
