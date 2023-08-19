@@ -1,19 +1,19 @@
 ### Description
+
 #### Story
 [SERV-XXXX](https://jira.xperi.com/browse/SERV-XXXX)
 #### Reviewers
 @ashishgulgulia @vduggempudi @suparihar @arvindramji @rkesana @kugupta1 @xsonusharma @Shubham-Xperi @Navneet-Singhh
-#### Check List
+#### PR Check List
 1. Wrote JUnits: 
    - [ ] Yes 
    - [ ] Not Required
-2. Changed the Request / Response of an API:
+2. Made any changes in the Request / Response of any API:
    - [ ] Yes (please add the request response below)
    - [ ] No
-
 ```
-Request: 
+Curl: N/A
 ```
 ```
-Response:
+Response: N/A
 ```
