@@ -1,6 +1,6 @@
 plugins {
 	id 'java'
-	id 'org.springframework.boot' version '3.1.2'
+	id 'org.springframework.boot' version "$SPRING_BOOT_VERSION"
 	id 'io.spring.dependency-management' version '1.1.2'
 }
 
@@ -22,14 +22,13 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.apache.kafka:kafka-streams'
-	implementation 'org.springframework.kafka:spring-kafka'
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: "$SPRING_BOOT_VERSION"
+	implementation group: 'org.apache.kafka', name: 'kafka-streams', version: "$KAFKA_VERSION"
+	implementation group: 'org.springframework.kafka', name: 'spring-kafka', version: "$SPRING_BOOT_VERSION"
 	compileOnly 'org.projectlombok:lombok'
-	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	annotationProcessor 'org.projectlombok:lombok'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'org.springframework.kafka:spring-kafka-test'
+	testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: "$SPRING_BOOT_VERSION"
+	testImplementation group: 'org.springframework.kafka', name: 'spring-kafka-test', version: "$SPRING_BOOT_VERSION"
 }
 
 tasks.named('test') {
