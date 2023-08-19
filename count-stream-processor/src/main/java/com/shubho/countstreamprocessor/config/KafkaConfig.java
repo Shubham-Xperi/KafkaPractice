@@ -15,6 +15,10 @@ import java.util.Objects;
 
 import static org.apache.kafka.streams.StreamsConfig.*;
 
+/**
+ * Simple KafkaStreams Configuration class which connects to the bootstrap server port: 29092
+ * Here the Kafka Server is actually running on docker and we have mapped that port to our local host
+ */
 @Configuration
 @EnableKafka
 @EnableKafkaStreams
